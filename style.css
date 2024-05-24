@@ -1,0 +1,122 @@
+body {
+    margin: 5%;
+
+    background-image: url("img/Imagen1.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right top;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  
+.presentacion{
+    text-align: center;
+    padding: 2rem 3rem;
+    border: 3px solid #fff;
+    box-shadow: 0 0 25px #222;
+    backdrop-filter: blur(5px);
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    order: 1;
+    
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.carrito {
+    order: 3;
+
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.contador {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.contador a {
+    color: black;
+    text-decoration: none;
+    /* elimina el subrayado */
+}
+
+header img {
+    max-width: 100%;
+    height: 10vh;
+
+    padding: 5px;
+}
+
+p {
+    word-wrap: break-word;
+}
+  
+
+/* Presentación de las imagenes */
+.Timg {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 25px #222;
+    backdrop-filter: blur(5px);
+    margin-top: 5%;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+.cajita img {
+    width: 227px;
+    height: 227px;
+    padding-right: 10px;
+}
+
+.contenedor .cajita .caja_texto {
+    text-align: center;
+    padding: 0px;
+}

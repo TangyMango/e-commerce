@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      
+    <title>VIAE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="presentacion">
+            <div class="logo">
+                <img src="img/Juan.png" alt="logo">
+            </div>
+    
+            <div class="carrito">
+                <a href="compras.html">
+                    <img src="img/Carrito.png" alt="logo">
+                </a>
+            </div>
+    
+            <div class="contador">
+                <a href="compras.html">
+                    <p id="contador-num">0</p>
+                </a>
+            </div>
+    
+            <h1>Bienvenido a la VIAE</h1>
+            <p>Venta Ilegal de Animales Exóticos.</p>
+        </div>
+    
+    </header>
+
+    <p>Para la estancia en está página se requiere que no comparta ningun tipo de dato acerca de lo que vea, compre u observe, por motivos que van en contra de lo que la ley estipula acerca del trato hacía los animales. Mucho ojo!</p>
+
+    <div class="Timg">
+        <div class="contenedor">
+            <div class="cajita">
+                <img src="img/Juan.png">
+                <div class="caja_texto">
+                    <span>Juan</span>
+                    <p>Precio $10</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan" data-precio="10" data-foto="img/Juan.png">AGREGAR</button>
+                </div>
+            </div>
+
+            <div class="cajita">
+                <img src="img/Juan_inalambrico.png">
+                <div class="caja_texto">
+                    <span>Juan Inalámbrico</span>
+                    <p>Precio $5,500</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan Inalámbrico" data-precio="5500" data-foto="img/Juan_inalambrico.png">AGREGAR</button>
+                </div>
+            </div>
+
+            <div class="cajita">
+                <img src="img/Juan_pajero.png">
+                <div class="caja_texto">
+                    <span>Juan Pajero</span>
+                    <p>Precio $2,300</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan Pajero" data-precio="2300" data-foto="img/Juan_pajero.png">AGREGAR</button>
+                </div>
+            </div>
+
+            <div class="cajita">
+                <img src="img/Pedidos_juan.png">
+                <div class="caja_texto">
+                    <span>Pedidos Juan</span>
+                    <p>Precio $7,800.00</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Pedidos Juan" data-precio="7800" data-foto="img/Pedidos_juan.png">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="cajita">
+                <img src="img/Juan_Acuatico.png">
+                <div class="caja_texto">
+                    <span>Juan Acuático</span>
+                    <p>Precio $5,500</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan Acuatico" data-precio="5500" data-foto="img/Juan_Acuatico.png">AGREGAR</button>
+                </div>
+            </div>
+
+            <div class="cajita">
+                <img src="img/Juan_Pedro.png">
+                <div class="caja_texto">
+                    <span>Juan Pedro</span>
+                    <p>Precio $5,500</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan Pedro" data-precio="5500" data-foto="img/Juan_Pedro.png">AGREGAR</button>
+                </div>
+            </div>
+
+            <div class="cajita">
+                <img src="img/Juan_obrero.png">
+                <div class="caja_texto">
+                    <span>Juan Obrero</span>
+                    <p>Precio $5,500</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan Obrero" data-precio="5500" data-foto="img/Juan_obrero.png">AGREGAR</button>
+                </div>
+            </div>
+
+            <div class="cajita">
+                <img src="img/Juan_bugeado.png">
+                <div class="caja_texto">
+                    <span>Juan Bugeado</span>
+                    <p>Precio $5,500</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan Bugeado" data-precio="5500" data-foto="img/Juan_bugeado.png">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="cajita">
+                <img src="img/Juan_chernobyl.png">
+                <div class="caja_texto">
+                    <span>Juan de Chernobyl</span>
+                    <p>Precio $5,500</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan de Chernobyl" data-precio="5500" data-foto="img/Juan_chernobyl.png">AGREGAR</button>
+                </div>
+            </div>
+
+            <div class="cajita">
+                <img src="img/Juan_deposito.png">
+                <div class="caja_texto">
+                    <span>Juan Deposito</span>
+                    <p>Precio $5,500</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan Deposito" data-precio="5500" data-foto="img/Juan_deposito.png">AGREGAR</button>
+                </div>
+            </div>
+
+            <div class="cajita">
+                <img src="img/Juan_premium.png">
+                <div class="caja_texto">
+                    <span>Juan Premium</span>
+                    <p>Precio $5,500</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan Premium" data-precio="5500" data-foto="img/Juan_premium.png">AGREGAR</button>
+                </div>
+            </div>
+
+            <div class="cajita">
+                <img src="img/Juan_tuneado.png">
+                <div class="caja_texto">
+                    <span>Juan Tuneado</span>
+                    <p>Precio $5,500</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan Tuneado" data-precio="5500" data-foto="img/Juan_tuneado.png">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="cajita">
+                <img src="img/Juan_mamadisimo.png">
+                <div class="caja_texto">
+                    <span>Juan Mamadísimo</span>
+                    <p>Precio $5,500</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan Mamadisimo" data-precio="5500" data-foto="img/Juan_mamadisimo.png">AGREGAR</button>
+                </div>
+            </div>
+
+            <div class="cajita">
+                <img src="img/Super_Juan.png">
+                <div class="caja_texto">
+                    <span>Super Juan</span>
+                    <p>Precio $5,500</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Super Juan" data-precio="5500" data-foto="img/Super_Juan.png">AGREGAR</button>
+                </div>
+            </div>
+
+            <div class="cajita">
+                <img src="img/Juan_fuckboy.png">
+                <div class="caja_texto">
+                    <span>Juan fuckboy</span>
+                    <p>Precio $5,500</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan fuckboy" data-precio="5500" data-foto="img/Juan_fuckboy.png">AGREGAR</button>
+                </div>
+            </div>
+
+            <div class="cajita">
+                <img src="img/Don_Juan.png">
+                <div class="caja_texto">
+                    <span>Don Juan</span>
+                    <p>Precio $5,500</p>
+                    <button onclick="mostrarDatos()" id="boton" class="boton" data-nombre="Juan Don Juan" data-precio="5500" data-foto="img/Don_Juan.png">AGREGAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
